@@ -4,7 +4,77 @@
     padding: 0;
 }
 .homePage{
-    background-color: rgb(133, 133, 133);
-    width: 100vw; 
+   
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.card{
+    margin-top: 2vh;
+    background-color: rgb(229, 241, 252);
+    width: 50vw; 
+    height: auto;
+    padding: 2vh;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-gap: .5vw;
+    grid-template-areas: 
+    "img img title     review"
+    "img img text      text "
+    "img img category  type "
+    "img img wsName    tags   "
+
+    ;
+}
+
+.card >*{
+    background-color:rgb(255, 255, 255) ;
+}
+
+.cardImg{
+    height: 100%;
+    width: 100%;
+}
+.cardTitle{
+
+    font-size: 25px;
+    grid-area: title;
+
+}
+
+.cardText{
+    grid-area: text;
+
+}
+
+.cardImg{
+    grid-area: img;
+
+}
+
+.cardWebsiteName{
+    grid-area: wsName;
+
+}
+
+.cardType{
+    grid-area: type;
+
+}
+
+.cardCategory{
+    grid-area: category;
+
+}
+.cardTags{
+    grid-area: tags;
+
+}
+
+.cardReview{
+    grid-area: review;
 }
