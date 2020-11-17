@@ -78,3 +78,24 @@
 .cardReview{
     grid-area: review;
 }
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.searchForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.searchBar{
+    height: 34px ;
+    width: 582px; 
+    border-radius: 100px;
+    outline:none !important;
+    padding-left: 2vw;
+}
