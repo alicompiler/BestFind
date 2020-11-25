@@ -1,0 +1,123 @@
+.card{
+    margin-top: 18.360px;
+    margin-bottom: 18.360px;
+    width: 50vw; 
+    height: 20vh;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr .7fr 1.9fr .4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: .5vw;
+    grid-template-areas: 
+    "img img title     review"
+    "img img text      text "
+    "img img text       text  "
+    "img img tags     .   "
+    "img img categoryAndType   wsName  "
+    
+
+    ;
+}
+
+.card >*{
+    background-color:rgb(255, 255, 255) ;
+}
+
+
+.cardTitle{
+
+    font-size: 25px;
+    font-weight: bold;
+
+    grid-area: title;
+
+}
+
+.cardText{
+    grid-area: text;
+    overflow: hidden;
+
+}
+
+.cardImg{
+    grid-area: img;
+    height: 100%;
+    width: 98%;
+
+}
+
+.cardWebsiteName{
+    grid-area: wsName;
+
+}
+
+.cardType{
+    z-index: 10;
+    margin-left: 200px;
+    grid-area: categoryAndType;
+
+}
+
+.cardCategory{
+    grid-area: categoryAndType;
+
+}
+.cardTags{
+    grid-area: tags;
+
+}
+
+
+
+.hrS{
+    background-color: #BDC3C7;
+    border: 1.5px solid #ECF0F1; 
+    color: #BDC3C7;
+}
+
+.hrL{
+    margin-bottom: 50px;
+    border: 1px solid #535758; 
+}
+
+.topText{
+    font-size: 45px;
+    color: #535758 ;
+}
+
+.cardReview {
+    font-size: 20px;
+    color: orange;
+    display: inline-block;
+    overflow: hidden;
+    grid-area: review;
+
+  }
+  .cardReview::before { 
+    content: "★★★★★";
+    margin-right: .5vw;
+  }
+
+  .tag{
+      background-color:#ECF0F1 ;
+      margin-right: 5px;
+      color:#535758;
+  }
+
+  .leftSide{
+    background-color:#535758 ;
+    color:#ffffff;
+    border-radius: 3px;
+    padding:3px;
+
+}
+
+.rightSide{
+    background-color: #ECF0F1 ;
+    color:#535758;
+    border-radius: 3px;
+    padding:3px;
+
+}
+
+

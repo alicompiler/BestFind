@@ -12,6 +12,7 @@ export default function Home() {
     return( 
         <header className="homePage">
             <SearchBar/>
+           
                 <Card/>
 
         </header>

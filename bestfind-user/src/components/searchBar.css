@@ -1,0 +1,105 @@
+
+
+
+.header{
+    width: 100vw;
+    transition: all .4s;
+
+}
+.searchForm{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    transition: all .4s;
+
+}
+
+
+.center>*{
+    top: 50%;
+    left: 50%;
+    
+}
+
+
+.top>*{
+    top: 20%;
+    left: 50%;
+}
+
+.top {
+    height: 30vw;
+}
+
+.center{
+    height: 100vw; 
+}
+
+
+.searchBar{
+    animation: searchBar 1.4s cubic-bezier(.75,.06,.6,.58)    both; 
+    height: 45px;
+    width: 582px; 
+    border-radius: 100px;
+    border: 1px solid #BDC3C7; 
+    outline:none !important;
+    padding-left: 0vw;
+    font-size: 0;
+    font-size: 18px;
+    color:#535758;
+    transition: all .4s;
+    border: 1px solid #BDC3C7; 
+
+
+ }
+
+ .searchBar:hover,
+ .searchBar:focus{
+    border: 1px solid #535758; 
+    transform: scale(1.02);
+
+
+}
+
+.searchBar::placeholder{
+    color:#BDC3C7;
+    font-size: 20px;
+
+
+}
+.searchBtn{
+    background-color: #0000;
+    border: none;
+    font-size: 35px;
+    margin-left: 1vw;
+    outline: 0 !important;
+    color: #535758 ;
+    transition: all .4s;
+
+
+}
+
+.searchBtn:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+@keyframes searchBar{
+
+    0% {width: 0px ; height: 0;  padding-left: 0 ; }
+    35% {width: 0px; height:45px; padding-left: 0 ;   }
+
+    45% { padding-left: 1vw; }
+
+    90% {width: 650px; height:45px;  }
+
+    100% {width: 582px; height:45px; padding-left: 2vw; }
+
+
+
+
+}
